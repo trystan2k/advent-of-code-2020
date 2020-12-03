@@ -389,7 +389,7 @@ function resolveStart1(input, slope) {
     return threes;
 }
 
-function resolveStart2(input) {
+function resolveStart2(input, slopes) {
     const result = slopes.map(slope => {
         return resolveStart1(input, slope);
     });
@@ -402,5 +402,5 @@ const input = parseInput(inputText);
 const resultOne = resolveStart1(input, slopes[1]);
 console.log(`For first start, # trees encountered = ${resultOne}`);
 
-const resultTwo = resolveStart2(input, [slopes[1]]);
+const resultTwo = resolveStart2(input, slopes);
 console.log(`For second start, # trees encountered multiplied = ${resultTwo}`);

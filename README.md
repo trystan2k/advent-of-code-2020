@@ -5,5 +5,5 @@
 To execute the code for a given day, you can use Node and the name of the file:
 
 ```bash
-node day-02.js
+node day-01.js
 ```

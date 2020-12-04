@@ -219,7 +219,7 @@ function parseInput(inputText) {
     .map(n=> parseInt(n));
 }
 
-function resolveStart1(input) {
+function resolveStar1(input) {
   let result = 0;
   input.forEach(number1 => {
     input.forEach(number2 => {
@@ -233,7 +233,7 @@ function resolveStart1(input) {
   return result;
 }
 
-function resolveStart2(input) {
+function resolveStar2(input) {
   let result = 0;
   input.forEach(number1 => {
     input.forEach(number2 => {
@@ -250,8 +250,8 @@ function resolveStart2(input) {
 
 const input = parseInput(inputText);
 
-const resultOne = resolveStart1(input);
+const resultOne = resolveStar1(input);
 console.log(`For first start, two entries multiplied = ${resultOne}`);
 
-const resultTwo = resolveStart2(input);
+const resultTwo = resolveStar2(input);
 console.log(`For second start, three entries multiplied = ${resultTwo}`);

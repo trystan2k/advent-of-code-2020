@@ -361,7 +361,7 @@ function parseInput(inputText) {
     return inputText.trim().split("\n");
 }
 
-function resolveStart1(input, slope) {
+function resolveStar1(input, slope) {
     const matrixInput = input.map(data => {
         return data.split('')
     });
@@ -389,9 +389,9 @@ function resolveStart1(input, slope) {
     return threes;
 }
 
-function resolveStart2(input, slopes) {
+function resolveStar2(input, slopes) {
     const result = slopes.map(slope => {
-        return resolveStart1(input, slope);
+        return resolveStar1(input, slope);
     });
 
     return result.reduce((prev, curr) => curr * prev, 1);
@@ -399,8 +399,8 @@ function resolveStart2(input, slopes) {
 
 const input = parseInput(inputText);
 
-const resultOne = resolveStart1(input, slopes[1]);
+const resultOne = resolveStar1(input, slopes[1]);
 console.log(`For first start, # trees encountered = ${resultOne}`);
 
-const resultTwo = resolveStart2(input, slopes);
+const resultTwo = resolveStar2(input, slopes);
 console.log(`For second start, # trees encountered multiplied = ${resultTwo}`);

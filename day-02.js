@@ -1029,7 +1029,7 @@ function matchRegex(input) {
   return null;
 }
 
-function resolveStart1(input) {
+function resolveStar1(input) {
   const regex = /([0-9]+)-([0-9]+)\s*(\w{1}):\s*(\w+)/;
   let valids = 0;
   input.forEach((data) => {
@@ -1051,7 +1051,7 @@ function resolveStart1(input) {
   return valids;
 }
 
-function resolveStart2(input) {
+function resolveStar2(input) {
   let valids = 0;
 
   input.forEach((data) => {
@@ -1075,8 +1075,8 @@ function resolveStart2(input) {
 
 const input = parseInput(inputText);
 
-const resultOne = resolveStart1(input);
+const resultOne = resolveStar1(input);
 console.log(`For first start, # of valid passwords = ${resultOne}`);
 
-const resultTwo = resolveStart2(input);
+const resultTwo = resolveStar2(input);
 console.log(`For second start, # of valid passwords = ${resultTwo}`);

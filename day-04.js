@@ -1288,7 +1288,7 @@ function resolveStar2(input, reqFields, validations) {
 const input = parseInput(inputText);
 
 const resultOne = resolveStar1(input, requiredFields);
-console.log(`For first start, # valid passports = ${resultOne.length}`);
+console.log(`For first star, # valid passports = ${resultOne.length}`);
 
 const resultTwo = resolveStar2(input, requiredFields, validations);
-console.log(`For second start, # valid passports = ${resultTwo.length}`);
+console.log(`For second star, # valid passports = ${resultTwo.length}`);

@@ -251,7 +251,7 @@ function resolveStar2(input) {
 const input = parseInput(inputText);
 
 const resultOne = resolveStar1(input);
-console.log(`For first start, two entries multiplied = ${resultOne}`);
+console.log(`For first star, two entries multiplied = ${resultOne}`);
 
 const resultTwo = resolveStar2(input);
-console.log(`For second start, three entries multiplied = ${resultTwo}`);
+console.log(`For second star, three entries multiplied = ${resultTwo}`);

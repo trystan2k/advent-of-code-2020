@@ -400,7 +400,7 @@ function resolveStar2(input, slopes) {
 const input = parseInput(inputText);
 
 const resultOne = resolveStar1(input, slopes[1]);
-console.log(`For first start, # trees encountered = ${resultOne}`);
+console.log(`For first star, # trees encountered = ${resultOne}`);
 
 const resultTwo = resolveStar2(input, slopes);
-console.log(`For second start, # trees encountered multiplied = ${resultTwo}`);
+console.log(`For second star, # trees encountered multiplied = ${resultTwo}`);

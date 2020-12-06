@@ -1076,7 +1076,7 @@ function resolveStar2(input) {
 const input = parseInput(inputText);
 
 const resultOne = resolveStar1(input);
-console.log(`For first start, # of valid passwords = ${resultOne}`);
+console.log(`For first star, # of valid passwords = ${resultOne}`);
 
 const resultTwo = resolveStar2(input);
-console.log(`For second start, # of valid passwords = ${resultTwo}`);
+console.log(`For second star, # of valid passwords = ${resultTwo}`);
